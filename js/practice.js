@@ -379,7 +379,7 @@
 // TODO Task-3. Фільтрація масиву чисел===================
 // function filterArray(numbers, value) {
 //     let newArray = [];
-    
+
 //     for (const number of numbers) {
 //         if (number > value) {
 //             newArray.push(number);
@@ -392,3 +392,60 @@
 // console.log(filterArray([1, 2, 3, 4, 5], 5)); // []
 // console.log(filterArray([12, 24, 8, 41, 76], 38)); // [41, 76]
 // console.log(filterArray([12, 24, 8, 41, 76], 20)); // [24, 41, 76]
+
+// TODO Rock, Paper, Scissors=========================
+// const rps = (p1, p2) => {
+//   if (
+//     (p1 === 'rock' && p2 === 'scissors') ||
+//     (p1 === 'scissors' && p2 === 'paper') ||
+//     (p1 === 'paper' && p2 === 'rock')
+//   ) {
+//     return 'Player 1 won!';
+//   } else if (
+//     (p1 === 'scissors' && p2 === 'rock') ||
+//     (p1 === 'paper' && p2 === 'scissors') ||
+//     (p1 === 'rock' && p2 === 'paper')
+//   ) {
+//     return 'Player 2 won!';
+//   } else {
+//     return 'Draw!';
+//   }
+// };
+
+// console.log(rps('paper', 'scissors'));
+
+// TODO Odd or Even Sum of Array======================
+// function oddOrEven(array) {
+//   let total = 0;
+//   for (const element of array) {
+//     total += element
+//     }
+//     if (total % 2 === 0) {
+//         return 'even'
+//     } else {return 'odd'}
+// }
+// console.log(oddOrEven([0, 1, 5]));
+// console.log(oddOrEven([]));
+// console.log(oddOrEven([1023, 1, 3]));
+// console.log(oddOrEven([-1023, -1, 3]));
+
+// TODO Square Every Digit of a Number ================
+
+// function squareDigits(num) {
+//   const string = String(num);
+//   const array = string.split('');
+
+//   let arrayOfNumbers = [];
+
+//   for (let i = 0; i < array.length; i += 1) {
+//     arrayOfNumbers.push(array[i] ** 2);
+//   }
+//   const result = Number(arrayOfNumbers.join(''));
+
+//   return result;
+// }
+
+// console.log(squareDigits(3212));
+// console.log(squareDigits(2112));
+// console.log(squareDigits(0));
+// console.log(squareDigits(453720));
