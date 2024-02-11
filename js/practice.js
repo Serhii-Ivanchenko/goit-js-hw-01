@@ -450,6 +450,18 @@
 // console.log(squareDigits(0));
 // console.log(squareDigits(453720));
 
+// TODO З'єднання різних масивів і виведення рандомного елементу масиву===========
+// const fruits = ['apple', 'banana', 'orange'];
+// const meat = ['poultry', 'pork', 'beef'];
+// const vegies = ['potato', 'tomato', 'cucumber'];
+
+// const food = fruits.concat(vegies, meat);
+// або const food = [...fruits, ...meat, ...vegies]
+
+// console.log(food);
+// const randomFood = food[Math.floor(Math.random() * food.length)];
+// console.log(randomFood);
+
 // TODO Positive numbers sum====================================
 // function positiveSum(arr) {
 //   let total = 0
