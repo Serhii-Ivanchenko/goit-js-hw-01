@@ -228,7 +228,7 @@
 //     alert('such drink is unavailable');
 // }
 
-// Задача від Іллі 1:
+// TODO Задача від Іллі 1 (розрахунок прибутку з депозиту):
 
 // function calculateProfit(amount, percent, period) {
 //   let total = amount;
@@ -239,7 +239,7 @@
 // }
 // console.log(calculateProfit(1000, 10, 3));
 
-// Задача від Іллі 2:
+// TODO Задача від Іллі 2 (розрахунок кількості порцій випивки):
 // function getDrinks(numberOfGuests) {
 //     if (numberOfGuests === 0) {
 //     return '0';
@@ -253,7 +253,7 @@
 // }
 // console.log(getDrinks(5));
 
-// Задача від Іллі 3:
+// TODO Задача від Іллі 3 (розрахунок кількості порцій випивки з певним кроком):
 // function getDrinksWithSteps(numberOfGuests, step) {
 //       let numberOfPortions = 0;
 //     for (let i = 1; i <= numberOfGuests; i += step) {
@@ -449,3 +449,67 @@
 // console.log(squareDigits(2112));
 // console.log(squareDigits(0));
 // console.log(squareDigits(453720));
+
+// TODO Positive numbers sum====================================
+// function positiveSum(arr) {
+//   let total = 0
+//   for (let i = 0; i < arr.length; i += 1) {
+//         if (arr[i] > 0) {
+//       total += arr[i];
+//     }
+//   }
+//   return total;
+// }
+
+// console.log(positiveSum([1, 2, 3, 4, 5])); // 15;
+// console.log(positiveSum([1, -2, 3, 4, 5])); //13;
+// console.log(positiveSum([-1, 2, 3, 4, -5])); //9
+
+// TODO Total amount of points=========================
+// function points(games) {
+//   let totalPoints = 0;
+//   let gameResult;
+//   let x;
+//   let y;
+
+//   for (let i = 0; i < games.length; i += 1) {
+//     gameResult = games[i];
+//     x = gameResult[0];
+//     y = gameResult[2];
+
+//     if (x > y) {
+//         totalPoints += 3;
+//       } else if (x < y) {
+//         totalPoints += 0;
+//       } else {totalPoints +=1}
+//   }
+//     return totalPoints;
+//   }
+
+// console.log(points(['1:0', '2:0', '3:0', '4:0', '2:1', '3:1', '4:1', '3:2', '4:2', '4:3'])); //30
+// console.log(points(['1:0', '2:0', '3:0', '4:4', '2:2', '3:3', '1:4', '2:3', '2:4', '3:4'])); //12
+
+// TODO Count of positives / sum of negatives===============
+// function countPositivesSumNegatives(input) {
+//   if (input === null || input.length === 0) {
+//     return [];
+//   }
+
+//   let x = 0;
+//   let y = 0;
+//   let totalArray = [x, y];
+//   for (const element of input) {
+//     if (element > 0) {
+//       x += 1;
+//     } else if (element < 0) {
+//       y += element;
+//     }
+//   }
+//   return totalArray = [x, y];
+// }
+
+// console.log(
+//   countPositivesSumNegatives([
+//     1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15,
+//   ])
+// );
