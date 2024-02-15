@@ -461,3 +461,25 @@
 // console.log(food);
 // const randomFood = food[Math.floor(Math.random() * food.length)];
 // console.log(randomFood);
+
+// TODO Підрахунок загальної вартості об'єктів в масиві=================
+// function calculateTotalPrice(productName) {
+//   const products = [
+//     { name: 'Grip', price: 1200, quantity: 9 },
+//     { name: 'Radar', price: 1300, quantity: 4 },
+//     { name: 'Scanner', price: 2700, quantity: 3 },
+//     { name: 'Droid', price: 400, quantity: 7 },
+//   ];
+//   let totalPrice = 0;
+//     for (let product of products) {
+//         if ( productName === product.name) {
+//             return (totalPrice = product.price * product.quantity);
+//         }
+//     }
+//       return `Product ${productName} not found!`;
+// }
+
+// console.log(calculateTotalPrice('Blaster')); //"Product Blaster not found!"
+// console.log(calculateTotalPrice('Grip')); //10800
+// console.log(calculateTotalPrice('Radar')); //5200
+
