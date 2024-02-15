@@ -274,6 +274,7 @@
 // }
 
 // console.log(calculateTotalPrice([412, 371, 94, 63, 176]));
+
 // TODO: Підрахунок суми замовлення (for ... of) ==============================================
 
 // function calculateTotalPrice(order) {
@@ -525,6 +526,22 @@
 //     1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15,
 //   ])
 // );
+
+// TODO Shortest word ===========================================
+// function findShort(string) { 
+//     const arr = string.split(' ');
+//     let shortestWord = arr[0];
+//     for (const word of arr) {
+//         if (word.length < shortestWord.length) {
+//             shortestWord = word;
+//         }
+//     }
+//     return shortestWord.length
+// }
+
+// console.log(findShort('bitcoin take over the world maybe who knows perhaps')); //3;
+// console.log(findShort('turns out random test cases are easier than writing out basic ones')); //3;
+// console.log(findShort("Let's travel abroad shall we")); //2;
 
 // TODO Підрахунок загальної вартості об'єктів в масиві=================
 // function calculateTotalPrice(productName) {
