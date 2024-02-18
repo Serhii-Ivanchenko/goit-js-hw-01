@@ -1,3 +1,5 @@
+// ! ПРАКТИКА №1 =========================================================================
+
 //* Розгалуження: if, if...else, else...if
 //TODO: 1 ===================================
 //Даний рядок, що складається із символів, наприклад, 'abcde'.
@@ -528,7 +530,7 @@
 // );
 
 // TODO Shortest word ===========================================
-// function findShort(string) { 
+// function findShort(string) {
 //     const arr = string.split(' ');
 //     let shortestWord = arr[0];
 //     for (const word of arr) {
@@ -564,3 +566,233 @@
 // console.log(calculateTotalPrice('Grip')); //10800
 // console.log(calculateTotalPrice('Radar')); //5200
 
+// ! ПРАКТИКА №2 =========================================================================
+// ! Масиви і функції
+//TODO:=========task-01=================
+//Перетворити рядок, що містить слова, розділені комами, в масив слів і вивести кожне слово в окремому рядку.
+
+// const str = 'JavaScript, HTML, CSS, React';
+// const arr = str.split(', ');
+
+// for (const item of arr) {
+//     console.log(item);
+// }
+
+//TODO:=========task-02=================
+// Знайти кількість слів у рядку, використовуючи методи масивів та цикл for...of.
+
+// const message = 'JavaScript is a popular programming language.';
+
+// const arr = message.split(' ');
+// console.log(arr.length);
+// let total = 0;
+
+// for (const item of arr) {
+//     total += 1;
+// }
+// console.log(total);
+
+//TODO:=========task-03=================
+// Об'єднати масив слів в рядок, розділений комами та пробілами.
+// const words = ['JavaScript', 'HTML', 'CSS', 'React'];
+// const arr = words.join(", ");
+// console.log(arr);
+
+//TODO:=========task-04=================
+// Знайти всі елементи масиву, що містять задану підстроку, та об'єднати їх у новий масив, після чого вивести у консоль лог повідомлення "Масив елементів, що містять підстроку substring: ..." .Результат повинен бути розділений комами та пробілами.(використати indexOf)
+
+// const stringArray = ['JavaScript', 'HTML', 'CSS', 'React'];
+// const substring = 'S';
+// const filterArray = [];
+
+// for (const item of stringArray) {
+//   if (item.includes(substring)) {
+//     filterArray.push(item);
+//     console.log(filterArray);
+//   }
+// }
+
+// через index of:
+// for (const item of stringArray)
+//   if (item.indexOf(substring) !== -1) {
+//     filterArray.push(item);
+//   }
+
+// console.log(
+//   `Масив елементів, що містять підстроку ${substring} : ${filterArray.join(', ')}`
+// );
+
+//TODO:=========task-05=================
+// Перевірити, чи містить масив заданий елемент. Якщо містить, видалити його, якщо ні - додати в кінець масиву.
+//  const array = ['JavaScript', 'HTML', 'CSS', 'SS'];
+// const elem = 'SS';
+
+//   const index = array.indexOf(elem);
+
+// console.log(index);
+
+// if (index !== -1) {
+//     array.splice(index, 1);
+// } else {
+//     array.push(elem);
+// }
+
+// index !== -1? array.splice(index, 1): array.push(elem);
+
+// console.log(array);
+
+// function transformArr(arr, el) {
+//     const index = arr.indexOf(el);
+//     index !== -1 ? arr.splice(index, 1) : arr.push(el);
+//     return arr;
+// }
+
+// console.log(transformArr(array, elem));
+
+//TODO:============task-06==============
+// Напишіть функцію min(a, b), яка повертає
+// менше з чисел a, b
+// Потрібно додати перевірку, що функція отримує числа
+
+// function min(a, b) {
+//   if (typeof a === 'number' && typeof b === 'number') {
+//     return Math.min(a, b);
+//   } else {
+//     return "Is not a number";
+//   }
+// }
+// console.log(min(45, 12));
+
+//TODO:=============task-07=================
+// напиши функцію яка сумуватиме сусідні числа і пушити в новий масив
+
+// const numbersArr = [22, 11, 34, 5, 12, 13, 14, 15];
+
+// function sumNumbers(arr = []) {
+//   let newArr = [];
+//     for (let i = 0; i < numbersArr.length -1; i += 1) {
+//         newArr.push(numbersArr[i] + numbersArr[i + 1]);
+//     }
+//     return newArr
+// }
+// const result = sumNumbers(numbersArr);
+
+// console.log(result); // [33, 45, 39, 17, 25, 27, 29]
+
+//TODO:=========task-08=================
+//Напишіть функцію caclculateAverage()
+//яка приймає довільну кількість
+//аргументів і повертає їхнє середнє значення.
+//Додати перевірку, що аргументи це числа.
+
+// function calculateAverage(...args) {
+//   let total = 0;
+//   let count = 0;
+//   for (const number of args) {
+//     if (typeof number !== 'number') {
+//       continue;
+//     }
+//     total += number;
+//     count += 1;
+//   }
+//   return total / count;
+// }
+
+// console.log(calculateAverage(10, 10, 20, 200));
+
+//TODO:=========task-09=================
+// Знайти перший парний елемент масиву, який більший за 10, використовуючи цикл з оператором break та continue.
+// const numbers = [5, 11, 21, 8, 7, 15, 11, 11];
+
+// function getEvenNumbers(arr = []) {
+//     for (const number of arr) {
+//         if (number % 2 === 0 && number > 10) {
+//             return `Even number over 10 is: ${number}`
+//         } else {return "Even number over 10 is not found"}
+//     }
+// }
+
+// console.log(getEvenNumbers(numbers));
+
+//!  Літерал об'єкта
+//!  Властвості та методи об'єкта
+//TODO:============task-01==============================================
+// Створіть об'єкт "прямокутник" з властивостями "довжина" та "ширина". Напишіть метод "calculateArea", який буде обчислювати площу прямокутника на основі його довжини та ширини.
+
+
+// console.log(square.calculateArea());
+
+//TODO:============task-02==============================================
+// Створіть об'єкт "магазин" зі списком товарів. Напишіть метод "hasProduct", який буде перевіряти, чи є певний товар в наявності на складі магазину.
+
+
+// console.log(store.hasProduct('kiwi'));
+// store.addProduct("kiwi");
+// console.log(store.hasProduct('kiwi'));
+
+//! Перебір об'єктів: for...in і методи Object.keys|values|entries
+//TODO:============task-03======================================================
+// Потрібно написати функцію, яка приймає 2 параметри obj і key, яка буде перебирати об'єкт.
+// Якщо об'єкт має такий ключ - поверне true
+// Є 2 варіанти рішення, спочатку напишемо функцію, потім вирішимо простим способом
+
+
+// console.log(getBool(obj, 'car')); // true
+
+//TODO:============task-04======================================================
+// У нас є об'єкт, у якому зберігатимуться зарплати
+// нашої команди
+// Напишіть код для сумування всіх зарплат і
+// збережіть його результат у змінній sum.
+// Якщо об'єкт salaries порожній, то результат має бути 0
+
+//TODO:============task-05======================================================
+// Напишіть функцію, яка приймає як параметр об'єкт
+// та формує об'єкти у новому масиві у форматі [key, value]
+
+// const user = {
+//   name: 'John',
+//   surName: 'Stones',
+//   age: 20,
+//   hobby: 'tenis',
+//   haveCar: true,
+//   merried: false,
+// };
+
+
+//TODO:============task-06======================================================
+// Створіть функцію multiplyNumeric(obj),
+// яка множить всі числові властивості об'єкта obj на 2.
+
+// до виклику функції
+// let menu = {
+//   width: 200,
+//   height: 300,
+//   title: 'My menu',
+// };
+
+// після виклику функції
+// menu = {
+//   width: 400,
+//   height: 600,
+//   title: 'My menu',
+// };
+
+//! Робота з масивом об'єктів rest/spred
+//TODO:============task-07=========================
+// Припустимо, є два масиви об'єктів:
+// Необхідно створити новий масив об'єктів, що буде містити всі об'єкти з обох масивів, але без дублів.
+// Тобто об'єкти з однаковим значенням ключа "id" повинні бути об'єднані в один об'єкт.
+
+// const arr1 = [
+//   { id: 1, name: 'John' },
+//   { id: 2, name: 'Mary' },
+//   { id: 3, name: 'Bob' },
+// ];
+// const arr2 = [
+//   { id: 2, name: 'Mary' },
+//   { id: 4, name: 'Jane' },
+//   { id: 5, name: 'Tom' },
+// ];
+
+// console.log(uniq(arr1, arr2));
