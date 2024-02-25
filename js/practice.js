@@ -718,13 +718,28 @@
 //!  Властвості та методи об'єкта
 //TODO:============task-01==============================================
 // Створіть об'єкт "прямокутник" з властивостями "довжина" та "ширина". Напишіть метод "calculateArea", який буде обчислювати площу прямокутника на основі його довжини та ширини.
-
+// const square = {
+//   length: 10,
+//   width: 25,
+//   calculateArea() {
+//     return this.length * this.width
+//   }
+// }
 
 // console.log(square.calculateArea());
 
 //TODO:============task-02==============================================
 // Створіть об'єкт "магазин" зі списком товарів. Напишіть метод "hasProduct", який буде перевіряти, чи є певний товар в наявності на складі магазину.
 
+// const store = {
+//   products: ['apple', 'orange', 'banana'],
+//   hasProduct(fruit) {
+//     return this.products.includes(fruit)
+//   },
+//   addProduct(product) {
+//     return this.products.push(product)
+//   }
+// }
 
 // console.log(store.hasProduct('kiwi'));
 // store.addProduct("kiwi");
@@ -736,6 +751,17 @@
 // Якщо об'єкт має такий ключ - поверне true
 // Є 2 варіанти рішення, спочатку напишемо функцію, потім вирішимо простим способом
 
+// const obj = {
+
+//   name: 'Igor',
+//   car: 'Mercedes',
+//   carColor: 'black',
+
+// };
+
+// const getBool = (obj, key) => {
+//   return Object.keys(obj).includes(key);
+//   }
 
 // console.log(getBool(obj, 'car')); // true
 
@@ -745,6 +771,26 @@
 // Напишіть код для сумування всіх зарплат і
 // збережіть його результат у змінній sum.
 // Якщо об'єкт salaries порожній, то результат має бути 0
+
+// const salaries = {
+//   Mango: 100,
+//   Poly: 160,
+//   Ajax: 1470,
+// };
+
+// let total = 0;
+// for (const salary of Object.values(salaries)) {
+//   total += salary;
+// }
+// console.log(total);
+
+// const calcSalaries = salaries => {
+//   return Object.values(salaries).reduce((acc, value) => {
+//     return acc + value;
+//   });
+// };
+
+// console.log(calcSalaries(salaries));
 
 //TODO:============task-05======================================================
 // Напишіть функцію, яка приймає як параметр об'єкт
@@ -759,6 +805,8 @@
 //   merried: false,
 // };
 
+// const newArr = user => Object.entries(user);
+// console.log(newArr(user));
 
 //TODO:============task-06======================================================
 // Створіть функцію multiplyNumeric(obj),
@@ -770,6 +818,17 @@
 //   height: 300,
 //   title: 'My menu',
 // };
+
+// function multiplyNumeric(obj) {
+//   for (const key in obj) {
+//     console.log(obj[key]);
+//     if (obj.hasOwnProperty(key) && typeof obj[key] === 'number') {
+//       obj[key] *= 2;
+//     }
+//   }
+//   return obj;
+// }
+// console.log(multiplyNumeric(menu));
 
 // після виклику функції
 // menu = {
@@ -794,5 +853,17 @@
 //   { id: 4, name: 'Jane' },
 //   { id: 5, name: 'Tom' },
 // ];
+
+// const uniq = (arr1, arr2) => {
+//   const combArray = [...arr1, ...arr2];
+//   const mergedArray = [];
+//   for (const obj of combArray) {
+//     const existingObj = mergedArray.find(item => item.id === obj.id);
+//     if (!existingObj) {
+//       mergedArray.push(obj);
+//     }
+//   }
+//   return mergedArray;
+// };
 
 // console.log(uniq(arr1, arr2));
