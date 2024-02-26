@@ -566,6 +566,28 @@
 // console.log(calculateTotalPrice('Grip')); //10800
 // console.log(calculateTotalPrice('Radar')); //5200
 
+// function changeEven(numbers, value) {
+//   let newArr = [];
+//   for (let i = 0; i < numbers.length; i += 1) {
+//     if (numbers[i] % 2 === 0) {
+//       newArr.push(numbers[i] + value);
+//     }
+//   }
+//   return newArr;
+// }
+
+// const players = [
+//   { name: 'Mango', playtime: 1270, gamesPlayed: 4 },
+//   { name: 'Poly', playtime: 469, gamesPlayed: 2 },
+//   { name: 'Ajax', playtime: 690, gamesPlayed: 3 },
+//   { name: 'Kiwi', playtime: 241, gamesPlayed: 1 },
+// ];
+
+// const totalAveragePlaytimePerGame = players.reduce((total, player) => {
+//   return (total += player.playtime / player.gamesPlayed);
+// }, 0);
+// console.log(totalAveragePlaytimePerGame);
+
 // ! ПРАКТИКА №2 =========================================================================
 // ! Масиви і функції
 //TODO:=========task-01=================
