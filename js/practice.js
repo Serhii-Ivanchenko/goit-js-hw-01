@@ -889,3 +889,29 @@
 // };
 
 // console.log(uniq(arr1, arr2));
+
+
+
+// TODO: Convert number into descending order ================================
+// function descendingOrder(n) {
+//   const digitsArray = n
+//     .toString()
+//     .split('')
+//     .toSorted((a, b) => b - a)
+//     .join('');
+//   const descNumber = Number(digitsArray);
+
+//   return descNumber;
+// }
+
+// function descendingOrder(n) {
+//   return parseInt(
+//     n
+//       .toString()
+//       .split('')
+//       .sort((a, b) => b - a)
+//       .join('')
+//   );
+// }
+// console.log(descendingOrder(972273402)); //977432220
+// console.log(descendingOrder(145263));
